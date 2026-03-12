@@ -1,0 +1,129 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="seo-cube">
+  <defs>
+    <style>
+      .cube-face { fill-opacity: 0.9; stroke: #00d9ff; stroke-width: 2; }
+      .face-1 { fill: #00d9ff; }
+      .face-2 { fill: #00a8cc; }
+      .face-3 { fill: #ff6b35; }
+      @keyframes rotateCube {
+        0% { transform: rotateX(0deg) rotateY(0deg); }
+        100% { transform: rotateX(360deg) rotateY(360deg); }
+      }
+      .seo-cube { animation: rotateCube 8s linear infinite; transform-style: preserve-3d; }
+    </style>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d9ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00a8cc;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Front face -->
+  <rect x="50" y="50" width="100" height="100" class="cube-face face-1" />
+  
+  <!-- Right face -->
+  <polygon points="150,50 180,65 180,165 150,150" class="cube-face face-2" />
+  
+  <!-- Top face -->
+  <polygon points="50,50 80,35 180,35 150,50" class="cube-face face-3" />
+  
+  <!-- SEO text in center -->
+  <text x="100" y="110" font-family="Playfair Display, serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#ffffff" opacity="0.9">SEO</text>
+</svg>
+
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="analytics-chart">
+  <defs>
+    <style>
+      @keyframes growBar {
+        0% { height: 0; }
+        100% { height: 100%; }
+      }
+      .bar-1 { animation: growBar 1.5s ease-out 0s forwards; }
+      .bar-2 { animation: growBar 1.5s ease-out 0.2s forwards; }
+      .bar-3 { animation: growBar 1.5s ease-out 0.4s forwards; }
+      .bar-4 { animation: growBar 1.5s ease-out 0.6s forwards; }
+    </style>
+  </defs>
+  
+  <!-- Grid lines -->
+  <line x1="20" y1="20" x2="20" y2="180" stroke="#2a3142" stroke-width="1" />
+  <line x1="20" y1="180" x2="180" y2="180" stroke="#2a3142" stroke-width="1" />
+  
+  <!-- Bars -->
+  <rect x="40" y="120" width="25" height="60" class="bar-1" fill="url(#grad)" rx="2" />
+  <rect x="80" y="80" width="25" height="100" class="bar-2" fill="url(#grad)" rx="2" />
+  <rect x="120" y="60" width="25" height="120" class="bar-3" fill="url(#grad)" rx="2" />
+  <rect x="160" y="40" width="25" height="140" class="bar-4" fill="url(#grad)" rx="2" />
+  
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d9ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff6b35;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg>
+
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="ranking-rocket">
+  <defs>
+    <style>
+      @keyframes rocketFly {
+        0% { transform: translateY(0px) rotate(0deg); opacity: 1; }
+        100% { transform: translateY(-120px) rotate(15deg); opacity: 0.5; }
+      }
+      .rocket-group { animation: rocketFly 2s ease-in-out infinite; }
+      
+      @keyframes flameBurst {
+        0% { opacity: 1; r: 8px; }
+        100% { opacity: 0; r: 20px; }
+      }
+      .flame { animation: flameBurst 1s ease-out infinite; }
+    </style>
+  </defs>
+  
+  <g class="rocket-group">
+    <!-- Rocket body -->
+    <path d="M 100 50 L 110 100 L 100 120 L 90 100 Z" fill="#00d9ff" />
+    
+    <!-- Rocket nose -->
+    <circle cx="100" cy="45" r="8" fill="#ff6b35" />
+    
+    <!-- Windows -->
+    <circle cx="100" cy="65" r="3" fill="#0a0e14" />
+    <circle cx="100" cy="80" r="3" fill="#0a0e14" />
+    
+    <!-- Fins -->
+    <polygon points="90,100 80,110 85,100" fill="#00a8cc" />
+    <polygon points="110,100 120,110 115,100" fill="#00a8cc" />
+  </g>
+  
+  <!-- Flames -->
+  <circle cx="100" cy="125" r="8" class="flame" fill="#ff6b35" opacity="0.8" />
+  <circle cx="95" cy="130" r="6" class="flame" fill="#ff8f3f" opacity="0.6" />
+  <circle cx="105" cy="130" r="6" class="flame" fill="#ff8f3f" opacity="0.6" />
+</svg>
+
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="search-globe">
+  <defs>
+    <style>
+      @keyframes spinGlobe {
+        0% { transform: rotateY(0deg); }
+        100% { transform: rotateY(360deg); }
+      }
+      .globe-group { animation: spinGlobe 4s linear infinite; transform-style: preserve-3d; }
+    </style>
+  </defs>
+  
+  <!-- Globe -->
+  <circle cx="100" cy="100" r="60" fill="none" stroke="#00d9ff" stroke-width="2" opacity="0.5" />
+  <circle cx="100" cy="100" r="55" fill="none" stroke="#00a8cc" stroke-width="1" opacity="0.3" />
+  
+  <!-- Continents (simplified) -->
+  <path d="M 80 70 Q 85 65 90 70 Q 85 75 80 70" fill="#00d9ff" opacity="0.7" />
+  <path d="M 110 85 Q 115 80 120 85 Q 115 90 110 85" fill="#00d9ff" opacity="0.7" />
+  
+  <!-- Search glow -->
+  <circle cx="100" cy="100" r="62" fill="none" stroke="#ff6b35" stroke-width="1" opacity="0.3" />
+  
+  <!-- Magnifying glass -->
+  <circle cx="130" cy="130" r="15" fill="none" stroke="#ff6b35" stroke-width="2" opacity="0.8" />
+  <line x1="142" y1="142" x2="155" y2="155" stroke="#ff6b35" stroke-width="2" opacity="0.8" />
+</svg>
