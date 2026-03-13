@@ -272,3 +272,11 @@ h1{font-size:clamp(2.6rem,5.5vw,4.2rem);font-weight:900;line-height:1.08;color:v
 .nav{min-height:68px}
 .nlinks{min-height:40px}
 .hero h1,.legal-hero h1,.hc h1,h1{font-size-adjust:0.5}
+
+/* Trustpilot badge */
+.tp-bar{background:var(--bg2);border-bottom:1px solid var(--bd);padding:10px 0;text-align:center;font-size:.82rem;color:var(--txd);position:relative;z-index:999}
+.tp-bar a{color:var(--ok);font-weight:600;text-decoration:underline;text-underline-offset:2px}
+.tp-bar .tp-stars{color:#00b67a;font-size:.9rem;letter-spacing:1px}
+.tp-badge{display:inline-flex;align-items:center;gap:8px;padding:8px 18px;background:var(--sf);border:1px solid var(--bd);border-radius:var(--rs);font-size:.82rem;color:var(--txd);margin-top:12px;text-decoration:none}
+.tp-badge:hover{border-color:var(--ok)}
+.tp-badge .tp-stars{color:#00b67a;font-weight:700}
