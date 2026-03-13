@@ -36,10 +36,12 @@
 
 <meta name="theme-color" content="#0F0F1A">
 <style>
+
+@font-face{font-family:'Plus Jakarta Fallback';src:local('Arial');size-adjust:108%;ascent-override:80%;descent-override:20%;line-gap-override:0%}
 :root{--p:#6C2BD9;--pl:#A78BFA;--pd:#5521B5;--pg:rgba(108,43,217,.3);--a:#FF6B2B;--ok:#10B981;--warn:#F59E0B;--err:#EF4444;--info:#3B82F6;--bg:#0F0F1A;--bg2:#1A1A2E;--bg3:#25253D;--bg4:#35355A;--tx:#E8E8F0;--txd:#9CA3AF;--txb:#FFF;--sf:rgba(255,255,255,.04);--sfh:rgba(255,255,255,.08);--bd:rgba(255,255,255,.08);--bdh:rgba(255,255,255,.15);--r:16px;--rs:10px;--rl:24px}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body{font-family:'Plus Jakarta Sans','Plus Jakarta Fallback',system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 a{text-decoration:none;color:inherit}ul{list-style:none}button{cursor:pointer;border:none;font-family:inherit;background:none}input{font-family:inherit}
 .bg-grid{position:fixed;inset:0;background-image:linear-gradient(rgba(108,43,217,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(108,43,217,.03) 1px,transparent 1px);background-size:60px 60px;pointer-events:none;z-index:0}
 .nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(15,15,26,.85);backdrop-filter:blur(16px);border-bottom:1px solid var(--bd)}
@@ -121,7 +123,7 @@ a{text-decoration:none;color:inherit}ul{list-style:none}button{cursor:pointer;bo
 <a href="https://nordicwebflow.com" target="_blank" rel="noopener" class="na">NordicWebflow ↗</a>
 <a href="index.html#hero" class="ncta">Gratis SEO Tjek</a>
 </div>
-<button class="nmob" onclick="document.getElementById('mm').classList.toggle('open')"><span></span><span></span><span></span></button>
+<button class="nmob" aria-label="Åbn menu" onclick="document.getElementById('mm').classList.toggle('open')"><span></span><span></span><span></span></button>
 </div>
 <div class="nmm" id="mm">
 <a href="index.html" class="na">Hjem</a>
@@ -216,8 +218,8 @@ a{text-decoration:none;color:inherit}ul{list-style:none}button{cursor:pointer;bo
 <section class="sec" id="priser"><div class="si"><div class="shd aos"><span class="slb">// Priser</span><h2 class="stt2">Vælg den rette plan</h2><p class="sds">Start gratis og opgrader når du er klar. Ingen binding.</p></div>
 <div class="pg2">
 <div class="pc aos d1"><div class="pcn">Gratis</div><div class="pcp">0 kr<span>/md</span></div><div class="pcpr">Altid gratis</div><ul class="pcf"><li><span class="pfc">✓</span> 3 analyser om dagen</li><li><span class="pfc">✓</span> Grundlæggende SEO-rapport</li><li><span class="pfc">✓</span> On-page analyse</li><li><span class="pfc">✓</span> Hastigheds-test</li><li><span class="pfc">✓</span> Mobilvenlighedstest</li></ul><button class="pcb pco" onclick="document.getElementById('hero').scrollIntoView({behavior:'smooth'})">Kom i gang gratis</button></div>
-<div class="pc feat aos d2"><div class="pcn">Professionel</div><div class="pcp">299 kr<span>/md</span></div><div class="pcpr">Faktureres månedligt</div><ul class="pcf"><li><span class="pfc">✓</span> Ubegrænsede analyser</li><li><span class="pfc">✓</span> Avanceret SEO-rapport</li><li><span class="pfc">✓</span> Konkurrent-sammenligning</li><li><span class="pfc">✓</span> Backlink-analyse</li><li><span class="pfc">✓</span> Ugentlige e-mail rapporter</li><li><span class="pfc">✓</span> Søgeords-tracking</li><li><span class="pfc">✓</span> Prioriteret support</li></ul><button class="pcb pcbp" onclick="return false">Start 14-dages prøveperiode</button></div>
-<div class="pc aos d3"><div class="pcn">Enterprise</div><div class="pcp">Kontakt os</div><div class="pcpr">Tilpasset pris</div><ul class="pcf"><li><span class="pfc">✓</span> Alt i Professionel</li><li><span class="pfc">✓</span> API-adgang</li><li><span class="pfc">✓</span> White-label rapporter</li><li><span class="pfc">✓</span> Multi-bruger adgang</li><li><span class="pfc">✓</span> Dedikeret account manager</li><li><span class="pfc">✓</span> SLA-garanti</li></ul><a href="https://nordicwebflow.com" target="_blank" rel="noopener" class="pcb pco" style="display:block;text-align:center">Kontakt salg</a></div>
+<div class="pc feat aos d2"><div class="pcn">Professionel</div><div class="pcp">299 kr<span>/md</span></div><div class="pcpr">Faktureres månedligt</div><ul class="pcf"><li><span class="pfc">✓</span> Ubegrænsede analyser</li><li><span class="pfc">✓</span> Avanceret SEO-rapport</li><li><span class="pfc">✓</span> Konkurrent-sammenligning</li><li><span class="pfc">✓</span> Backlink-analyse</li><li><span class="pfc">✓</span> Ugentlige e-mail rapporter</li><li><span class="pfc">✓</span> Søgeords-tracking</li><li><span class="pfc">✓</span> Prioriteret support</li></ul><a href="https://nordicwebflow.com/priser" target="_blank" rel="noopener" class="pcb pcbp" style="display:block;text-align:center;text-decoration:none">Start 14-dages prøveperiode</a></div>
+<div class="pc aos d3"><div class="pcn">Enterprise</div><div class="pcp">Kontakt os</div><div class="pcpr">Tilpasset pris</div><ul class="pcf"><li><span class="pfc">✓</span> Alt i Professionel</li><li><span class="pfc">✓</span> API-adgang</li><li><span class="pfc">✓</span> White-label rapporter</li><li><span class="pfc">✓</span> Multi-bruger adgang</li><li><span class="pfc">✓</span> Dedikeret account manager</li><li><span class="pfc">✓</span> SLA-garanti</li></ul><a href="https://nordicwebflow.com/priser" target="_blank" rel="noopener" class="pcb pco" style="display:block;text-align:center;text-decoration:none">Kontakt salg</a></div>
 </div></div></section>
 
 <!-- FAQ -->
