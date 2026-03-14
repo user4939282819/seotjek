@@ -28,9 +28,10 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"seotjek.dk","url":"https://seotjek.dk","description":"Gratis SEO-analyseværktøj til danske hjemmesider med over 150 tjekpunkter.","applicationCategory":"SEO Tool","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"DKK"},"inLanguage":"da","publisher":{"@type":"Organization","name":"seotjek.dk","url":"https://seotjek.dk","sameAs":["https://nordicwebflow.com"]}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Hvad er en SEO-analyse?","acceptedAnswer":{"@type":"Answer","text":"En SEO-analyse identificerer tekniske fejl og muligheder for forbedring på din hjemmeside."}},{"@type":"Question","name":"Er seotjek.dk gratis?","acceptedAnswer":{"@type":"Answer","text":"Ja, vores grundlæggende analyse er 100% gratis uden tilmelding."}},{"@type":"Question","name":"Overholder I GDPR?","acceptedAnswer":{"@type":"Answer","text":"Ja, vi overholder fuldt ud GDPR og dansk databeskyttelseslov."}}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Forside","item":"https://seotjek.dk/"},{"@type":"ListItem","position":2,"name":"Funktioner","item":"https://seotjek.dk/#funktioner"},{"@type":"ListItem","position":3,"name":"Priser","item":"https://seotjek.dk/#priser"},{"@type":"ListItem","position":4,"name":"FAQ","item":"https://seotjek.dk/#faq"}]}</script>
-<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=optional" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap"></noscript>
 
 <meta name="theme-color" content="#0F0F1A">
 <style>
@@ -83,18 +84,18 @@ a{text-decoration:none;color:inherit}ul{list-style:none}button{cursor:pointer;bo
 
 <!-- COOKIE BANNER GDPR -->
 <div class="cb" id="cb"><div class="cb-in">
-<h3>🍪 Vi bruger cookies</h3>
+<p class="cb-title">🍪 Vi bruger cookies</p>
 <p>Vi bruger cookies og lignende teknologier til at forbedre din oplevelse, analysere trafik og personalisere indhold. I henhold til dansk lovgivning og EU's GDPR-forordning beder vi om dit udtrykkelige samtykke. Du kan til enhver tid ændre eller tilbagetrække dit samtykke. Læs mere i vores <a href="cookiepolitik.html">cookiepolitik</a> og <a href="privatlivspolitik.html">privatlivspolitik</a>.</p>
 <div class="cb-btns"><button class="cbtn cba" onclick="closeCB()">Acceptér alle</button><button class="cbtn cbd" onclick="closeCB()">Afvis alle</button><button class="cbtn cbs" onclick="openCM()">Tilpas mine valg</button></div>
 </div></div>
 
 <div class="cmov" id="cmov"><div class="cm" role="dialog" aria-label="Cookie-indstillinger">
-<h3>Cookie-indstillinger</h3>
+<p class="cb-title">Cookie-indstillinger</p>
 <p>Vælg hvilke typer cookies du vil tillade. Nødvendige cookies kan ikke deaktiveres. Dit valg gemmes i henhold til GDPR og dansk lovgivning.</p>
-<div class="cmc"><div class="cmi"><h4>Nødvendige cookies</h4><p>Essentielle for sidens grundlæggende funktioner.</p></div><div class="tgl on dis"></div></div>
-<div class="cmc"><div class="cmi"><h4>Analytiske cookies</h4><p>Hjælper os med at forstå, hvordan besøgende bruger siden.</p></div><div class="tgl" onclick="this.classList.toggle('on')"></div></div>
-<div class="cmc"><div class="cmi"><h4>Funktionelle cookies</h4><p>Muliggør forbedret funktionalitet og personalisering.</p></div><div class="tgl" onclick="this.classList.toggle('on')"></div></div>
-<div class="cmc"><div class="cmi"><h4>Marketing cookies</h4><p>Bruges til relevante annoncer og kampagnesporing.</p></div><div class="tgl" onclick="this.classList.toggle('on')"></div></div>
+<div class="cmc"><div class="cmi"><p class="cmi-h">Nødvendige cookies</p><p>Essentielle for sidens grundlæggende funktioner.</p></div><div class="tgl on dis"></div></div>
+<div class="cmc"><div class="cmi"><p class="cmi-h">Analytiske cookies</p><p>Hjælper os med at forstå, hvordan besøgende bruger siden.</p></div><div class="tgl" onclick="this.classList.toggle('on')"></div></div>
+<div class="cmc"><div class="cmi"><p class="cmi-h">Funktionelle cookies</p><p>Muliggør forbedret funktionalitet og personalisering.</p></div><div class="tgl" onclick="this.classList.toggle('on')"></div></div>
+<div class="cmc"><div class="cmi"><p class="cmi-h">Marketing cookies</p><p>Bruges til relevante annoncer og kampagnesporing.</p></div><div class="tgl" onclick="this.classList.toggle('on')"></div></div>
 <div class="cmfb"><button class="cbtn cba" onclick="closeCM();closeCB()">Gem mine valg</button><button class="cbtn cbd" onclick="closeCM()">Annullér</button></div>
 </div></div>
 
@@ -346,14 +347,14 @@ a{text-decoration:none;color:inherit}ul{list-style:none}button{cursor:pointer;bo
 <a href="https://nordicwebflow.com" target="_blank" rel="noopener" class="ftnwf"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Ejet af NordicWebFlow · CVR: 46305639</a>
 </div>
 <div class="ft-quick-cols">
-<div class="ftc"><h4>Produkt</h4>
+<div class="ftc"><p class="ftc-h">Produkt</p>
 <a href="index.html">Gratis SEO Analyse</a>
 <a href="index.html#funktioner">Funktioner</a>
 <a href="index.html#priser">Priser</a>
 <a href="index.html#faq">FAQ</a>
 <a href="index.html#kontakt">Kontakt os</a>
 </div>
-<div class="ftc"><h4>Ressourcer</h4>
+<div class="ftc"><p class="ftc-h">Ressourcer</p>
 <a href="blog/hvad-er-seo.html">Blog</a>
 <a href="ordbog/index.html">SEO-ordbog</a>
 <a href="brancher/toemrer.html">Brancher</a>
@@ -361,7 +362,7 @@ a{text-decoration:none;color:inherit}ul{list-style:none}button{cursor:pointer;bo
 <a href="sammenligning/seotjek-vs-semrush.html">Sammenligning</a>
 <a href="cases/haandvaerker-case.html">Cases</a>
 </div>
-<div class="ftc"><h4>Juridisk</h4>
+<div class="ftc"><p class="ftc-h">Juridisk</p>
 <a href="privatlivspolitik.html">Privatlivspolitik</a>
 <a href="cookiepolitik.html">Cookiepolitik</a>
 <a href="vilkaar.html">Vilkår</a>
